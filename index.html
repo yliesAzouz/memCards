@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mem cards</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-responsive.css">
+</head>
+
+<body>
+    <header>
+        <h1>MEMO CARDS</h1>
+    </header>
+
+    <section>
+        <!-- PARAMETRE -->
+        <aside>
+            <div class="parametre">
+                <label>LINES</label>
+                <input type="number" id="nb_row" value="4" min="2" max="8" />
+                <label>COLUMN</label>
+                <input type="number" id="nb_col" value="4" min="2" max="8" />
+                <label>TIME</label>
+                <input type="number" id="time" value="30" min="20" max="240" />
+            </div>
+            <div id="Timer">
+                <h2>TIMER</h2>
+                <p id="safeTimerDisplay">00:30</p>
+            </div>
+            <button id="reset" onclick="reset(this)">Start</button>
+            <p id="condition"> Attrappez les tous</p>
+        </aside>
+        <!-- TABLE DE JEU -->
+        <div class="jeu">
+            <table id="board"></table>
+        </div>
+    </section>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
